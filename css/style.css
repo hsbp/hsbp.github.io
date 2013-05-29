@@ -52,7 +52,7 @@ a:hover {
 }
 form {
 }
-form input,  form select,  form textarea {
+form input, form select, form textarea {
 	-webkit-appearance: none;
 }
 br.clear {
@@ -61,25 +61,45 @@ br.clear {
 p, ul, ol, dl, table {
 	margin-bottom: 3em;
 }
-section,  article {
+section, article {
 	margin-bottom: 6em;
 }
-section > :last-child,  article > :last-child {
+section > :last-child, article > :last-child {
 	margin-bottom: 0;
 }
-section:last-child,  article:last-child {
+section:last-child, article:last-child {
 	margin-bottom: 0;
 }
-/*
- Globális stilus definiciók az arculathoz 
- */
- 
- /********************************
- Egyedi tartalmi elemek definiciói
- *********************************/
- /*
-Szlogen 
- */
+.image {
+	position: relative;
+	display: inline-block;
+	border-radius: 8px;
+}
+.image img {
+	display: block;
+	width: 100%;
+	border-radius: 8px;
+}
+/*********************************
+Egyéni Oszálydefiníciók
+*********************************/
+.centered {
+	text-align: center;
+}
+.leftalign {
+	text-align: left;
+}
+.rightalign {
+	text-align: right;
+}
+.rounded20 {
+	border-radius: 20px;
+}
+.rounded10 {
+	border-radius: 10px;
+}
+/*Header Szlogen*/
+
 .byline {
 	display: block;
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -93,56 +113,54 @@ Szlogen
 	font-weight: 700;
 	color: #000;
 }
+/*/Header Szlogen*/	
+/* Gomb lenyomás effekt */
+.pushdown {
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	box-shadow: 0px 3px 5px #000;
+	-moz-box-shadow: 0px 3px 5px #000;
+	-webkit-box-shadow: 0px 3px 5px #000;
+}
+.pushdown:hover {
+	position: relative;
+	top: 3px;
+	color: #fqq;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+/* /Gomb lenyomás effekt */
+/*Drop shadow effect*/
+.dropshadow {
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+/*/Drop shadow effect*/
+/*********************************
+/Egyéni Oszálydefiníciók
+*********************************/
+/*/Globális stilus definiciók az arculathoz*/
+ 
+ /********************************
+ Egyedi tartalmi elemek definiciói
+ *********************************/
+ 
 /*
- Szlogen 
+ Hacksense Doboz 
  */
-	/*
- Game of life és Hacksense Doboz 
- */
-#logocontainer {
-	z-index: 5;
+#hacksensecontainer {
+	z-index: 0;
 	position: fixed;
-	top: 55px;
-	left: 2px;
+	top: -45px;
 }
 #hacksense {
-	border-bottom-left-radius: 5px;
-	border-top-left-radius: 5px;
+	border-radius: 5px;
 }
-#hacklogo {
-	border-bottom-right-radius: 5px;
-	border-top-right-radius: 5px;
-}
-/*
- /Game of life és Hacksense Doboz 
- */
- 	/*
- A nyelv választtó menüpont megkülönböztetése. Nem működik minden böngészőn :(  
- */
-#langswitcher {
-	background: -webkit-linear-gradient(#006, #F00);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-#langswitcher:hover {
-	-webkit-text-fill-color: #00F;
-}
-/*
- /A nyelv választtó menüpont megkülönböztetés  
- */
-.image {
-	position: relative;
-	display: inline-block;
-	border-radius: 8px;
-}
-.image img {
-	display: block;
-	width: 100%;
-	border-radius: 8px;
-}
-#abouthack
-{
-	text-align:justify;
+#abouthack {
+	text-align: justify;
 }
 /********************************
  /Egyedi tartalmi elemek definiciói
@@ -408,8 +426,6 @@ ul.meta li.comments:before {
 .is-blog {
 }
 .is-post {
-}
-.is-post-summary {
 }
 .is-page-content {
 }
