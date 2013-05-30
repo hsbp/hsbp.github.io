@@ -22,15 +22,24 @@
 <link rel="stylesheet" href="css/style.css" />
 <link rel="stylesheet" href="css/style-desktop.css" />
 </noscript>
+<style>
+#langswitcher {
+	background: -webkit-linear-gradient(#006, #F00);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+#langswitcher:hover {
+	-webkit-text-fill-color: #00F;
+}
+</style>
 </head><body class="homepage">
 
 <!-- Header -->
 <header id="header">
-  <div id="logocontainer"><a href="#" id="logo"><img id="hacksense" width="140" height="45" alt="hacksense" src="http://vsza.hu/hacksense-png/"><img id="hacklogo" src="images/hack.gif" alt="hacklogo" height="45"></a></div>
+  <div id="hacksensecontainer"><a href="#" id="logo"><img id="hacksense" width="140" height="45" alt="hacksense" src="http://vsza.hu/hacksense-png/"></a></div>
   <div class="logo">
     <div class="bylineheader">Magyar Független Tudásközpont - KÖZ/MŰ/HELY</div>
   </div>
-
 </header>
 <!-- /Header --> 
 
@@ -38,9 +47,9 @@
 <nav id="nav" class="skel-ui-fixed">
   <ul>
     <li class="current_page_item"><a href="index.html">Kezdőlap</a></li>
-    <li><a href="#rolunk" class="scroll">Rólunk</a></li>
+    <li><a href="rolunk.html">Rólunk</a></li>
     <li><a href="#contact" class="scroll">Kapcsolat</a></li>
-    <li><a href="#">Tiki-Wiki</a></li>
+    <li><a href="http://hsbp.org">Wiki</a></li>
     <li><a href="#">Köszönet</a></li>
     <li><a id="langswitcher" href="#">English</a></li>
   </ul>
@@ -52,7 +61,7 @@
   <section id="banner">
     <h2> A H.A.C.K.<br>
     </h2>
-    <span class="byline">avagy Hungarian Autonomous Center for Knowledge egy budapesti hackerspace, melynek célja, hogy közösségi teret és infrastruktúrát biztosítson az alkotni vágyók számára ötleteik megvalósításához.</span> <a href="#" class="button">Nézz be hozzánk!</a> </section>
+    <span class="byline">avagy Hungarian Autonomous Center for Knowledge egy budapesti hackerspace, melynek célja, hogy közösségi teret és infrastruktúrát biztosítson az alkotni vágyók számára ötleteik megvalósításához.</span><img class="rounded10" alt="hacksense image" src="http://vsza.hu/hacksense-png/"></section>
 </div>
 <!-- /Banner --> 
 
@@ -63,11 +72,10 @@
       <div class="12u"> 
         
         <!-- Highlight -->
-        <section class="is-highlight">
-          <a name="rolunk" id="rolunk"></a>
+        <section class="is-highlight"> <a name="rolunk"></a>
           <ul class="special">
             <li><a href="#" class="info">Info</a></li>
-            <li><a href="#" class="community">Community</a></li>
+            <li><a href="rolunk.html" class="community" title="Rólunk">Community</a></li>
             <li><a href="#" class="flask">Flask</a></li>
             <li><a href="#" class="contact">Contact</a></li>
           </ul>
@@ -90,45 +98,45 @@
             <div class="row">
               <div class="3u"> 
                 
-                <!-- Bejegyzés -->
-                <section class="is-feature"> <a href="#" class="image image-full"><img src="images/calendar.png" alt="" /></a>
+                <!-- Bejegyzés 1-->
+                <section class="is-feature"> <a href="#" class="image image-full"><img class="dropshadow" src="images/calendar.png" alt="" /></a>
                   <h3><a href="#">Eseménynaptár</a></h3>
                   <p> Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in 
                     lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus. </p>
                 </section>
-                <!-- /Bejegyzés --> 
+                <!-- /Bejegyzés 1--> 
                 
               </div>
               <div class="3u"> 
                 
-                <!-- Bejegyzés -->
-                <section class="is-feature"> <a href="#" class="image image-full"><img src="images/project.png" alt="" /></a>
+                <!-- Bejegyzés 2-->
+                <section class="is-feature"> <a href="#" class="image image-full"><img class="dropshadow" src="images/project.png" alt="" /></a>
                   <h3><a href="#">Projektek</a></h3>
                   <p> Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in 
                     lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus. </p>
                 </section>
-                <!-- /Bejegyzés --> 
+                <!-- /Bejegyzés 2--> 
                 
               </div>
               <div class="3u"> 
                 
-                <!-- Bejegyzés -->
-                <section class="is-feature"> <a href="#" class="image image-full"><img  src="images/hack2.gif" alt="" /></a>
+                <!-- Bejegyzés 3-->
+                <section class="is-feature"> <a href="#" class="image image-full"><img class="dropshadow" src="images/hack2.gif" alt="" /></a>
                   <h3><a href="#">H.A.C.K. Tagság</a></h3>
                   <p> Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in 
                     lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus. </p>
                 </section>
-                <!-- /Bejegyzés --> 
+                <!-- /Bejegyzés 3--> 
                 
               </div>
               <div class="3u"> 
-                <!-- Bejegyzés -->
-                <section class="is-feature"> <a href="#" class="image image-full"><img src="images/workshopp.png" alt="" /></a>
+                <!-- Bejegyzés 4-->
+                <section class="is-feature"> <a href="#" class="image image-full"><img class="dropshadow" src="images/workshopp.png" alt="" /></a>
                   <h3><a href="#">Workshoppok és előadások</a></h3>
                   <p> Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in 
                     lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus. </p>
                 </section>
-                <!-- /Bejegyzés --> 
+                <!-- /Bejegyzés 4--> 
                 
               </div>
             </div>
@@ -162,8 +170,7 @@
   <div class="row">
     <div class="12u"> 
       <!-- Kapcsolat -->
-      <section>
-        <a name="contact" id="contact"></a>
+      <section> <a name="contact" id="contact"></a>
         <h2 class="major"><span>Kapcsolat</span></h2>
         Cim: 1056 Budapest, Bástya utca 12. Telefon: +36 (1) / 445-42-25 <br>
         <a href="#"><b>IRC:</b> #hspbp @ IRCnet</a> Email: hack(kukac)hsbp(pont)org </section>
@@ -180,8 +187,8 @@
       <!-- Sitemap -->
       <section>
         <h2 class="major"><span>SITEMAP</span></h2>
-        <a href="#">IINDEX,</a> <a href="#">ABOUT US,</a> <a href="#">CONTACT,</a> <a href="#">TIKI-WIKI,</a> <a href="#">THX,</a> <a href="#">IRC,</a> <a href="#">ZÖLDFAL,</a> <a href="#">WORKSHOP,</a> <a href="#">BURNSTATION,</a> <a href="#">MAIL LIST,</a> </section>
-      <!-- /Kapcsolat --> 
+        <b>INDEX,</b> <a href="rolunk.html">Rólunk,</a> <a href="#">Kapcsolat,</a> <a href="http//hsbp.org">Wiki,</a> <a href="#">Köszönet,</a> </section>
+      <!-- /Sitemap --> 
     </div>
   </div>
   <div class="row"> 
