@@ -287,11 +287,11 @@ ul.contact li a.twitter {
 ul.contact li:hover a.twitter {
 	background-color: #2DAAE4;
 }
-ul.contact li a.rss {
+ul.contact li a.soup {
 	background-position: -96px 0px;
 }
-ul.contact li:hover a.rss {
-	background-color: #F2600B;
+ul.contact li:hover a.soup{
+	background-color: #C40002;
 }
 ul.contact li a.dribbble {
 	background-position: -144px 0px;
