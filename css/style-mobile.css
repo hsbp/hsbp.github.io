@@ -217,7 +217,6 @@ Ez itt a becsuszó mobilos navigáció
 #titleBar {
 	background: rgba(21, 38, 23, 0.8);
 }
-
 #titleBar .title {
 	display: block;
 	position: relative;
@@ -286,17 +285,17 @@ Ez itt a becsuszó mobilos navigáció
  Hacksense Doboz 
  */
 .hacksense-mobile {
-	float:right;
-	border-radius:3px;
-	padding-top:1em;
+	float: right;
+	border-radius: 3px;
+	padding-top: 1em;
 	height: 44px;
 	width: 150px;
 	background: url(../images/hacksense_open-mobile.png) no-repeat center;
 	z-index: 20000;
 }
 .hacksense-mobile:hover {
-	float:right;
-	padding-top:1em;
+	float: right;
+	padding-top: 1em;
 	height: 44px;
 	width: 150px;
 	background: url(../images/hacksense_closed-mobile.png) no-repeat center;
@@ -309,7 +308,8 @@ Ez itt a becsuszó mobilos navigáció
 Rolunk szekcio                                                               
 *********************************************************************************/
 #rolunk-container {
-	padding:1em 0;}
+	padding: 1em 0;
+}
 h2.rolunk {
 	text-align: left;
 	margin: 0.775em 0 0.75em 0;
@@ -317,4 +317,31 @@ h2.rolunk {
 h2.rolunk span {
 	top: -0.775em;
 	padding: 0 1em 0 0;
+}
+#interested {
+	text-align: center;
+	margin: 0 auto;
+}
+/*********************************************************************************
+infrastruktura szekcio                                                               
+*********************************************************************************/
+#infrastruktura-img {
+	height:213px;
+	background:url(../images/infrastructure.png) no-repeat center;
+	}
+
+#infrastruktura-container {
+	
+}
+h2.infrastruktura {
+	text-align: left;
+	margin: 0.775em 0 0.75em 0;
+}
+h2.infrastruktura span {
+	top: -0.775em;
+	padding: 0 1em 0 0;
+}
+#infrastruktura {
+	text-align: center;
+	margin: 0 auto;
 }
