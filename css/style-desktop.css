@@ -73,10 +73,10 @@ h4 {
 	margin: 0 0 1.5em 0;
 }
 .is-feature {
-	text-align:justify;
+	text-align: justify;
 }
 .is-feature h2, ul {
-	text-align:center;
+	text-align: center;
 }
 .is-post {
 }
@@ -316,20 +316,20 @@ Rolunk szekcio
 h2.rolunk {
 	font-size: 1.65em;
 	text-align: center;
-	margin: 0 ;
+	margin: 0;
 }
 h2.rolunk span {
 	top: -0.775em;
 	padding: 0 1.5em 0 1.5em;
 }
-#interested{
-	text-align:center;
-	margin:0 auto;
-	padding-top:2em;
-	}
-	#interested .button {
-		margin-top:1em;
-		}
+#interested {
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 2em;
+}
+#interested .button {
+	margin-top: 1em;
+}
 /*********************************************************************************
 Aktualis szekcio
 *********************************************************************************/
@@ -337,30 +337,40 @@ Aktualis szekcio
 h2.aktualis {
 	font-size: 1.65em;
 	text-align: center;
-	margin: 0 ;
+	margin: 0;
 }
 h2.aktualis span {
 	top: -0.775em;
 	padding: 0 1.5em 0 1.5em;
 }
 /*********************************************************************************
-Projektek szekcio
+infrastruktura szekcio
 *********************************************************************************/
 #infrastruktura-img {
-	width:50% auto;
-	height:350px;
-	background:url(../images/infrastructure_big.png) no-repeat right;
-	}
-
+	width: 50% auto;
+	height: 320px;
+	background: url(../images/infrastructure_big.png) no-repeat right;
+}
 #infrastruktura-container {
-	padding: 3em 0;}
-	
+	padding: 3em 0;
+}
 h2.infrastruktura {
 	font-size: 1.65em;
 	text-align: center;
-	margin: 0 ;
+	margin: 0;
 }
 h2.infrastruktura span {
 	top: -0.775em;
 	padding: 0 1.5em 0 1.5em;
+}
+.infrastructure_list_container {
+	line-height: 1.2em;
+}
+#visitus {
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 2em;
+}
+#visitus .button {
+	margin-top: 1em;
 }

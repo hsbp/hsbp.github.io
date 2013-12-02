@@ -148,11 +148,12 @@ $(function() {
 <!-- Nav -->
 <nav id="nav" class="skel-ui-fixed">
   <ul>
-    <li class="current_page_item"><a href="index.html">Kezdőlap</a></li>
+    <li><a href="#" >Home</a></li>
     <li><a href="#rolunk-szekcio">Rólunk</a></li>
-    <li><a href="kapcsolat.html" class="scroll">Kapcsolat</a></li>
+    <li><a href="#infrastruktura-szekcio">Infrastruktúra</a></li>
+    <li><a href="#aktualis-szekcio">Aktuális Infók</a></li>
+     <li><a href="#kapcsolat-szekcio">Kapcsolat</a></li>
     <li><a href="http://hsbp.org">Wiki</a></li>
-    <li><a href="thx.html">Köszönet</a></li>
     <li><a id="langswitcher" href="index_en.html">English</a></li>
   </ul>
 </nav>
@@ -182,9 +183,8 @@ $(function() {
         <ul class="special">
           <li><a href="#rolunk-szekcio"  name="rolunk" class="rolunk" title="Rólunk"></a></li>
           <li><a href="#infrastruktura-szekcio" name="infrastructure" class="infrastructure"></a></li>
-          <li><a href="#" name="info" class="info"></a></li>
-          
-          <li><a href="#" name="contact" class="contact"></a></li>
+          <li><a href="#aktualis-szekcio" name="info" class="info"></a></li>
+          <li><a href="#kapcsolat-szekcio" name="contact" class="contact"></a></li>
         </ul>
         
         <!-- /Highlight --> 
@@ -203,8 +203,9 @@ $(function() {
             <section><span id="idezet">"A hacker olyan személy, aki intellektuális kíváncsiságból, tiszta kreativitásból vagy élvezetből, a rendszerek korlátait próbálja felderíteni vagy meghaladni."</span>
               <ul id="brucequote" class="meta rightalign">
                 <li class="comments"> - <a target="_blank" href="http://www.mediakutato.hu/cikk/2002_03_osz/01_hackerek/03.html">Bruce Schneider</a> </li>
-              </ul></section><section>
-              Ebbe a definícióba még Lenardo da Vinci is belefér. Nem csak informatikában jártas emberekre kell gondolni a hacker szó hallatán.  Bárki lehet hacke,r aki egy eszköz vagy rendszer korlátait próbálja meghaladni, átalakítva azt, hogy az eredeti renteltetését megváltoztassa.
+              </ul>
+            </section>
+            <section> Ebbe a definícióba még Lenardo da Vinci is belefér. Nem csak informatikában jártas emberekre kell gondolni a hacker szó hallatán.  Bárki lehet hacke,r aki egy eszköz vagy rendszer korlátait próbálja meghaladni, átalakítva azt, hogy az eredeti renteltetését megváltoztassa.
               A hacker szó hack igéből származik. Jelentése barkácsolni, ácsolni, aprítani. Hacker kifejezést számítógép programozó lelkes diákok és amatőr fejlesztők kezdték használni magukra megnevezésként. Elismerést az kapott, aki minél sikeresebben faragot le a kódokból. Az akkori gépek kevés memóriával rendelkeztek, ezért ez fontos szempont volt. Később átalakult a hacker-kultúra. Ma a hacker jelentése többnyire "kimagasló számítástechnikai tudással bíró személy". Sajnos a köztudatban keverik hackereket a számítógépes bűnözővel. </section>
             <section class="centered" style="padding-bottom:2em;"><img alt="hacker glider" height="100" width="100"src="images/glider.png"></section>
             <h2  class="rolunk"><span>A HACKERSPACE</span></h2>
@@ -274,16 +275,14 @@ $(function() {
                   </div>
                 </section>
               </div>
-                        
             </div>
-             <div class="20u" id="interested">
-                <h2>Felkeltettük az érdeklődésed?</h2>
-                <a class="button button-alt button-big" href="http://hsbp.org" target="_blank">Tudj meg többet!</a></div>
-      </div>
+            <div class="20u" id="interested">
+              <h2>Felkeltettük az érdeklődésed?</h2>
+              <a class="button button-alt button-big" href="http://hsbp.org" target="_blank">Tudj meg többet!</a></div>
+              <a name="infrastruktura-szekcio"></a>
           </div>
-          
         </div>
-         
+      </div>
     </div>
   </div>
 </div>
@@ -294,43 +293,93 @@ $(function() {
     <div class="row">
       <div class="12u">
         <section class="is-features">
-        <div id="whitespace"></div>
-        <h2  class="infrastruktura"><span>Infrastruktúra</span></h2>
-        <div class="row">
+          <div id="whitespace"></div>
+          <h2  class="infrastruktura"><span>Infrastruktúra</span></h2>
+          <div class="row">
           <div class="6u">
             <section class="is-feature">
-              <div id="infrastructure_list_container" >
-                 <section>A helyszín mellett, minimálisan az alábbi infrastruktúrát fogjuk biztosítani:</section>
-                 <ul>
-                 <li>- Multifunkcionális termek előadásokhoz, workshopokhoz és prezentációkhoz</li>
-                 <li>- Publikus számítógépek Internetelérés és WLAN</li>
+              <div class="infrastructure_list_container" >
+                <section>A helyszín mellett, minimálisan az alábbi infrastruktúrát fogjuk biztosítani:</section>
+                <ul>
+                  <li>- Multifunkcionális termek előadásokhoz, workshopokhoz és prezentációkhoz</li>
+                  <li>- Publikus számítógépek Internetelérés és WLAN</li>
                   <li>- Elektronika és hardverműhely</li>
                   <li>- Médiaműhely</li>
                   <li>- Kémia, biotech, képzőművészeti... műhely,</li>
                   <li>- Könyvtár,</li>
                   <li>- Felszerelt konyha a kulináris eseményekhez.</li>
-                 </ul>
+                </ul>
+              </div></section>
+              <section  class="infrastructure_list_container" >Vannak még érdekes eszközeink, amikkel szintén megismerkedhetsz:
+                 <ul>
+                  <li>-<a href="http://hsbp.org/reprap&highlight=rep%20rap" target="_blank"> 3D Nyomtató - REPRAP PRUSA MENDEL</a></li>
+                  <li>-<a href="http://hsbp.org/silhouette" target="_blank"> Vágógép - GRAPHTEC SILHOUETTE CAMEO</a></li>
+                  <li>-<a href="http://hsbp.org/zoldfal&highlight=z%C3%B6ldfal"> Aquapónikus Zöldfal - MONSTERS INCLUDED</a></li>
+                  <li>-<a href="http://hsbp.org/burnstation"> Burn Station - HIGH-TECH BEVÁSÁRLÓKOCSI</a></li>
                  
-              </div>
+                </ul>
+              
             </section>
             <!-- /Bejegyzés 2--> 
             
           </div>
           <div class="6u">
-            <div id="infrastruktura-img" class="rounded20">&nbsp;
-              </div>
-            </section>
-          </div>
-          
-        </div>
+          <div id="infrastruktura-img" class="rounded20">&nbsp; </div>
+        </section>
       </div>
+      <div  id="visitus"><a class="button" href="http://hsbp.org" target="_blank">látogass el hozzánk!</a></div>
+      <a name="aktualis-szekcio"</a>
     </div>
+    
   </div>
+</div>
+</div>
 </div>
 
 <!--Infrastruktúra Szekció vége --> 
 
 <!-- Aktuális infó szekció -->
+<div id="kapcsolat-container">
+  <div class="container">
+    <div class="row">
+      <div class="12u">
+        <section class="is-features">
+        <div id="whitespace"></div>
+        <h2  class="aktualis"><span>Aktuális információk</span></h2>
+        <div class="row">
+          <div class="4u">
+            <section class="is-feature">
+              <div class="rounded20 centered" id="important_container" style="width:30% auto; height:300px; background:#FFF">
+                <h2><br>
+                  Fontos Dolgok Doboz</h2>
+              </div>
+            </section>
+            <!-- /Bejegyzés 2--> 
+            
+          </div>
+          <div class="4u">
+            <section class="is-feature">
+              <div class="rounded20 centered" id="important_container" style="width:30% auto; height:300px; background:#FF0">
+                <h2><br>
+                  Eseménynaptár Doboz</h2>
+              </div>
+            </section>
+          </div>
+          <div class="4u">
+            <section class="is-feature">
+              <div class="rounded20 centered" id="important_container" style="width:30% auto; height:300px; background:#F63">
+                <h2><br>
+                  Projektek Doboz</h2>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<a name="kapcsolat-szekcio"></a>
+<!--Aktuális infó Szekció vége --> 
 <div id="aktualis-container">
   <div class="container">
     <div class="row">
@@ -370,18 +419,17 @@ $(function() {
     </div>
   </div>
 </div>
-
-<!--Aktuális infó Szekció vége --> 
-
 <!-- Footer -->
 <footer id="footer" class="container">
+<h2 class="major"><span>Kapcsolat</span></h2>
   <div class="row">
-    <div class="12u"> 
+    <div class="6u"> 
       <!-- Kapcsolat -->
-      <section> <a name="contact" id="contact"></a>
-        <h2 class="major"><span>Kapcsolat</span></h2>
-        Cim: 1056 Budapest, Bástya utca 12. Telefon: +36 (1) / 445-42-25 <br>
-        <a href="#"><b>IRC:</b> #hspbp @ IRCnet</a> Email: hack(kukac)hsbp(pont)org </section>
+      <section> 
+        Cim: 1056 Budapest, Bástya utca 12. <br>
+	    Telefon: +36 (1) / 445-42-25 <br>
+        <b>IRC:</b> #hspbp @ IRCnet<br>
+        Email: hack(kukac)hsbp(pont)org </section>
       <!-- /Kapcsolat --> 
       <!-- Social -->
       <section>

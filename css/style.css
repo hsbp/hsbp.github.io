@@ -45,7 +45,8 @@ h2.major span {
 }
 a {
 	color: #006376;
-	text-decoration: underline;
+	text-decoration: none;
+	font-weight: bold;
 }
 a:hover {
 	text-decoration: blink;
@@ -380,7 +381,7 @@ ul.special a.infrastructure:before {
 	background-position: -256px 0px;
 }
 ul.special a.infrastructure:hover {
-	background:#b9d2ce ;
+	background: #b9d2ce;
 }
 ul.special a.contact:before {
 	background-position: -384px 0px;
@@ -571,9 +572,8 @@ h2.rolunk span {
 	height: 1.5em;
 }
 #idezet {
- 
-	font-style:italic;
-	}
+	font-style: italic;
+}
 #alapelvek_container {
 	padding-top: 1em;
 	width: 300px;
@@ -593,17 +593,15 @@ a.alapelvek_lista:hover {
 	font-weight: bold;
 	width: 300px;
 }
-
 #fenntarthatosag, #onkentesseg, #meritokracia, #belepes, #transzparencia, #nyitottsag {
 	display: none;
 }
-
 /*********************************
 Aktualis szekcio
 *********************************/
 #aktualis-container {
 	padding: 3em 0;
-	background:#aee1ae;
+	background: #aee1ae;
 	border-top: 10px solid #C1CAC5;
 }
 h2.aktualis {
@@ -626,8 +624,7 @@ infrastruktúra szekcio
 *********************************/
 #infrastruktura-container {
 	padding: 1em 0;
-	background:#b9d2ce ;
-	
+	background: #b9d2ce;
 }
 h2.infrastruktura {
 	position: relative;
@@ -641,17 +638,42 @@ h2.infrastruktura span {
 #infrastruktura-container span {
 	line-height: 1em;
 }
-
-#infrastructure_list_container{
-width:50% auto;}
-
-#infrastructure_list_container section	 {
-	text-align:left;
-	list-style-type:square; 
-	padding-top:1em;
-	}
-  #infrastructure_list_container ul {
-	  text-align:left;
-	list-style-type:square; 
-	padding-top:1em;
-	  }
+.infrastructure_list_container {
+	width: 50% auto;
+}
+.infrastructure_list_container section {
+	text-align: left;
+	list-style-type: square;
+	padding-top: 1em;
+}
+.infrastructure_list_container ul {
+	text-align: left;
+	list-style-type: square;
+	padding-top: 1em;
+}
+.infrastructure_list_container a:hover {
+	color: #FFF
+}
+/*********************************
+Kapcsolat szekcio
+*********************************/
+#aktualis-container {
+	padding: 3em 0;
+	background: #aee1ae;
+	border-top: 10px solid #C1CAC5;
+}
+h2.aktualis {
+	position: relative;
+	border-top: solid 5px #6B7770;
+}
+h2.aktualis span {
+	position: relative;
+	display: inline-block;
+	background: #aee1ae;
+}
+#aktualis-container span {
+	line-height: 1em;
+}
+#whitespace {
+	height: 1.5em;
+}
