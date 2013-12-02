@@ -322,6 +322,9 @@ h2.rolunk span {
 	text-align: center;
 	margin: 0 auto;
 }
+#hackerspaces-img{
+	width:200px;
+	}
 /*********************************************************************************
 infrastruktura szekcio                                                               
 *********************************************************************************/
@@ -342,6 +345,36 @@ h2.infrastruktura span {
 	padding: 0 1em 0 0;
 }
 #infrastruktura {
+	text-align: center;
+	margin: 0 auto;
+}
+/*********************************************************************************
+aktuális info szekcio                                                               
+*********************************************************************************/
+h2.aktualis {
+	text-align: left;
+	margin: 0.775em 0 0.75em 0;
+}
+h2.aktualis span {
+	top: -0.775em;
+	padding: 0 1em 0 0;
+}
+#aktualis {
+	text-align: center;
+	margin: 0 auto;
+}
+/*********************************************************************************
+Kapcsolat  szekcio                                                               
+*********************************************************************************/
+h2.kapcsolat {
+	text-align: left;
+	margin: 0.775em 0 0.75em 0;
+}
+h2.kapcsolat span {
+	top: -0.775em;
+	padding: 0 1em 0 0;
+}
+#kapcsolat {
 	text-align: center;
 	margin: 0 auto;
 }

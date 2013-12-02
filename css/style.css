@@ -245,11 +245,14 @@ ul.style2 > li:first-child {
 	margin-top: 0;
 }
 ul.contact {
+	text-align:left;
+	
 }
 ul.contact li {
 	position: relative;
 	display: inline-block;
 	margin: 0 0.25em 0 0.25em;
+	
 	top: 0;
 	-moz-transition: top .15s ease-in-out;
 	-webkit-transition: top .15s ease-in-out;
@@ -387,7 +390,7 @@ ul.special a.contact:before {
 	background-position: -384px 0px;
 }
 ul.special a.contact:hover {
-	background: #999999;
+	background:#dfdfd1;
 }
 ul.meta {
 	font-size: 0.85em;
@@ -529,6 +532,7 @@ A Footert itt felülvezérelheted
 *********************************************************************************/
 
 #footer {
+	border-top: 10px solid #C1CAC5;
 }
 #footer a {
 	color: inherit;
@@ -604,6 +608,7 @@ Aktualis szekcio
 	background: #aee1ae;
 	border-top: 10px solid #C1CAC5;
 }
+
 h2.aktualis {
 	position: relative;
 	border-top: solid 5px #6B7770;
@@ -657,23 +662,26 @@ h2.infrastruktura span {
 /*********************************
 Kapcsolat szekcio
 *********************************/
-#aktualis-container {
+#kapcsolat-container {
 	padding: 3em 0;
-	background: #aee1ae;
+	background: #dfdfd1;
 	border-top: 10px solid #C1CAC5;
 }
-h2.aktualis {
+h2.kapcsolat {
 	position: relative;
 	border-top: solid 5px #6B7770;
 }
-h2.aktualis span {
+h2.kapcsolat span {
 	position: relative;
 	display: inline-block;
-	background: #aee1ae;
+	background: #dfdfd1;
 }
-#aktualis-container span {
+#kapcsolat-container span {
 	line-height: 1em;
 }
-#whitespace {
-	height: 1.5em;
-}
+#contactform input {
+	width:250px;
+	}
+#contactform textarea {
+	width:250px;
+	}

@@ -297,17 +297,17 @@ A Footert itt felülvezérelheted   style.ss azonban ezt is felulirja
 *********************************************************************************/
 #footer {
 	text-align: center;
-	padding: 8em 0 8em 0;
+	padding:0;
 }
 #footer > .row {
-	padding: 2em 0 2em 0;
+	padding: 0 ;
 }
 /*
 Copyright doboz
 */
 
 #copyright {
-	margin: 4em 0 0 0;
+	margin: 2em 0 2em 0;
 }
 /*********************************************************************************
 Rolunk szekcio
@@ -374,3 +374,30 @@ h2.infrastruktura span {
 #visitus .button {
 	margin-top: 1em;
 }
+/*********************************************************************************
+kapcsolat szekcio
+*********************************************************************************/
+
+h2.kapcsolat {
+	font-size: 1.65em;
+	text-align: center;
+	margin: 0;
+}
+h2.kapcsolat span {
+	top: -0.775em;
+	padding: 0 1.5em 0 1.5em;
+}
+#contactinfo-container h2{
+	text-align:left;
+	}
+#contactinfo-container section{
+	text-align:left;
+	padding-top:2em;
+	line-height:1.6em;
+	}
+	#contactinfo-container span{
+		font-weight:bold;
+
+	}
+ul.contact{	
+margin-left:-0.25em;}
