@@ -282,13 +282,13 @@ ul.special a.info:before {
 	background-position: 0px 0px;
 }
 ul.special a.info:hover {
-	background: #aee1ae;
+	background: #ACE199;
 }
 ul.special a.rolunk:before {
 	background-position: -128px 0px;
 }
 ul.special a.rolunk:hover {
-	background: #E3DAA8;
+	background: #E3D794;
 }
 ul.special a.infrastructure:before {
 	background-position: -256px 0px;
@@ -334,10 +334,10 @@ h2.rolunk span, h2.aktualis span, h2.infrastruktura span, h2.kapcsolat span {
 Rólunk szekció
 *******************/
 #rolunk-container {
-	background: #E3D794;
+	background: #E3DAA8;
 }
 h2.rolunk span {
-	background: #E3D794;
+	background: #E3DAA8;
 }
 
 /****************************
@@ -449,10 +449,10 @@ Infrastruktúra szekció VÉGE
 Aktuális Információk szekció
 ****************************/
 #aktualis-container {
-	background: #ACE199;
+	background: #aee1ae;
 }
 h2.aktualis span {
-	background: #ACE199;
+	background: #aee1ae;
 }
 /********************************
 Aktuális Információk szekció VÉGE
