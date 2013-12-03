@@ -1,5 +1,5 @@
 /*
-Ez a script válltogatja a különböző css fileokat a reszponziv elrendezés miatt.
+Ez a script válltogatja a különböző css fileokat a reszponzív elrendezés végett.
 */
 window._skel_config = {
 	preset: 'standard',

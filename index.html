@@ -2,157 +2,38 @@
 <!--
 	This page was created for the Hungarian Autonomous Center for Knowledge aka. H.A.C.K.
     Author: TesseracT 
-    Mail: tesseract(at)mailbox(dot)hu
+    Mail: tesseract(at)web-developer(dot)hu
     Based on the template TXT from n33 on http://html5up.net
 -->
 <html>
 <head>
 <title>H.A.C.K. - Hungarian Autonomous Center for Knowledge</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="description" content="This webpage was created to advertise the H.A.C.K. to new visitors." />
+<meta name="description" content="This webpage was created to serve as a landing page to the H.A.C.K. website's visitors." />
 <meta name="keywords" content="hack, hackerspace, hacker, bastya utca, muhely" />
 <link href="css/fonts.css" rel="stylesheet" />
 <script src="js/jquery-1.9.1.min.js"></script>
 <script src="js/config.js"></script>
 <script src="js/skel.min.js"></script>
 <script src="js/skel-ui.min.js"></script>
-<script src="js/hsbp.js?v=201305262"></script>
-<script>
-$(function() {
-    
-    $('#fuggetlenseg-button').click(function() {
-		$('#fenntarthatosag').addClass('hidden').hide();
-		$('#onkentesseg').addClass('hidden').hide();
-		$('#meritokracia').addClass('hidden').hide();
-		$('#belepes').addClass('hidden').hide();
-		$('#transzparencia').addClass('hidden').hide();
-		$('#nyitottsag').addClass('hidden').hide();
-        if ($('#fuggetlenseg').hasClass('hidden')) {
-            $('#fuggetlenseg').removeClass('hidden').fadeIn(1000);
-        }
-        else {
-            $('#fuggetlenseg').addClass('hidden').fadeOut(1000);
-        }
-    });
-});
-$(function() {
-   	$('#fenntarthatosag').addClass('hidden').hide();
-	$('#fenntarthatosag-button').click(function() {
-		 $('#fuggetlenseg').addClass('hidden').hide();
-		 $('#onkentesseg').addClass('hidden').hide();
-		$('#meritokracia').addClass('hidden').hide();
-		$('#belepes').addClass('hidden').hide();
-		$('#transzparencia').addClass('hidden').hide();
-		$('#nyitottsag').addClass('hidden').hide();
-        if ($('#fenntarthatosag').hasClass('hidden')) {
-            $('#fenntarthatosag').removeClass('hidden').fadeIn(1000);
-        }
-        else {
-            $('#fenntarthatosag').addClass('hidden').fadeOut(1000);
-        }
-    });
-});
-$(function() {
-   	$('#onkentesseg').addClass('hidden').hide();
-	$('#onkentesseg-button').click(function() {
-		 $('#fuggetlenseg').addClass('hidden').hide();
-		 $('#fenntarthatosag').addClass('hidden').hide();
-		$('#meritokracia').addClass('hidden').hide();
-		$('#belepes').addClass('hidden').hide();
-		$('#transzparencia').addClass('hidden').hide();
-		$('#nyitottsag').addClass('hidden').hide();
-        if ($('#onkentesseg').hasClass('hidden')) {
-            $('#onkentesseg').removeClass('hidden').fadeIn(1000);
-        }
-        else {
-            $('#onkentesseg').addClass('hidden').fadeOut(1000);
-        }
-    });
-});
-$(function() {
-   	$('#meritokracia').addClass('hidden').hide();
-	$('#meritokracia-button').click(function() {
-		 $('#fuggetlenseg').addClass('hidden').hide();
-		 $('#fenntarthatosag').addClass('hidden').hide();
-		$('#onkentesseg').addClass('hidden').hide();
-		$('#belepes').addClass('hidden').hide();
-		$('#transzparencia').addClass('hidden').hide();
-		$('#nyitottsag').addClass('hidden').hide();
-        if ($('#meritokracia').hasClass('hidden')) {
-            $('#meritokracia').removeClass('hidden').fadeIn(1000);
-        }
-        else {
-            $('#meritokracia').addClass('hidden').fadeOut(1000);
-        }
-    });
-});
-$(function() {
-   	$('#belepes').addClass('hidden').hide();
-	$('#belepes-button').click(function() {
-		 $('#fuggetlenseg').addClass('hidden').hide();
-		 $('#fenntarthatosag').addClass('hidden').hide();
-		$('#onkentesseg').addClass('hidden').hide();
-		$('#meritokracia').addClass('hidden').hide();
-		$('#transzparencia').addClass('hidden').hide();
-		$('#nyitottsag').addClass('hidden').hide();
-        if ($('#belepes').hasClass('hidden')) {
-            $('#belepes').removeClass('hidden').fadeIn(1000);
-        }
-        else {
-            $('#belepes').addClass('hidden').fadeOut(1000);
-        }
-    });
-});
-$(function() {
-   	$('#transzparencia').addClass('hidden').hide();
-	$('#transzparencia-button').click(function() {
-		 $('#fuggetlenseg').addClass('hidden').hide();
-		 $('#fenntarthatosag').addClass('hidden').hide();
-		$('#onkentesseg').addClass('hidden').hide();
-		$('#meritokracia').addClass('hidden').hide();
-		$('#belepes').addClass('hidden').hide();
-		$('#nyitottsag').addClass('hidden').hide();
-        if ($('#transzparencia').hasClass('hidden')) {
-            $('#transzparencia').removeClass('hidden').fadeIn(1000);
-        }
-        else {
-            $('#transzparencia').addClass('hidden').fadeOut(1000);
-        }
-    });
-});
-$(function() {
-   	$('#nyitottsag').addClass('hidden').hide();
-	$('#nyitottsag-button').click(function() {
-		 $('#fuggetlenseg').addClass('hidden').hide();
-		 $('#fenntarthatosag').addClass('hidden').hide();
-		$('#onkentesseg').addClass('hidden').hide();
-		$('#meritokracia').addClass('hidden').hide();
-		$('#belepes').addClass('hidden').hide();
-		$('#transzparencia').addClass('hidden').hide();
-        if ($('#nyitottsag').hasClass('hidden')) {
-            $('#nyitottsag').removeClass('hidden').fadeIn(1000);
-        }
-        else {
-            $('#nyitottsag').addClass('hidden').fadeOut(1000);
-        }
-    });
-});
-</script>
+<script src="js/alapelvek.js"></script>
+<script src="js/smoothscroll.js"></script>
 <noscript>
 <link rel="stylesheet" href="css/noscript.css" />
 <link rel="stylesheet" href="css/style.css" />
 <link rel="stylesheet" href="css/style-desktop.css" />
 </noscript>
 </head><body class="homepage">
-
-<!-- Nav -->
+<a name="home"></a>
+<div id="home"></div>
+<!-- Felső Menü -->
 <nav id="nav" class="skel-ui-fixed">
   <ul>
-    <li><a href="#" >Home</a></li>
+    <li><a href="#home">Home</a></li>
     <li><a href="#rolunk-szekcio">Rólunk</a></li>
     <li><a href="#infrastruktura-szekcio">Infrastruktúra</a></li>
     <li><a href="#aktualis-szekcio">Aktuális Infók</a></li>
-     <li><a href="#kapcsolat-szekcio">Kapcsolat</a></li>
+    <li><a href="#kapcsolat-szekcio">Kapcsolat</a></li>
     <li><a href="http://hsbp.org">Wiki</a></li>
     <li><a id="langswitcher" href="index_en.html">English</a></li>
   </ul>
@@ -161,6 +42,7 @@ $(function() {
 <div id="logo">
   <div class="hacksense-mobile"></div>
 </div>
+<!-- Felső Menü VÉGE--> 
 <!-- Banner -->
 <div id="banner-wrapper">
   <section id="banner">
@@ -170,16 +52,16 @@ $(function() {
     <div class="hacksense"> </div>
   </section>
 </div>
-<!-- /Banner --> 
+<!-- Banner VÉGE--> 
 
-<!-- Main -->
+<!-- Az ultimate mindent magában hodorzó megaDIV -->
 <div id="main-wrapper">
   <div id="main" class="container">
     <div class="row">
       <div class="12u"> 
         
-        <!-- Highlight -->
-        <section class="is-highlight">
+        <!-- Karikák Doboz -->
+        <section class="centered">
         <ul class="special">
           <li><a href="#rolunk-szekcio"  name="rolunk" class="rolunk" title="Rólunk"></a></li>
           <li><a href="#infrastruktura-szekcio" name="infrastructure" class="infrastructure"></a></li>
@@ -187,8 +69,10 @@ $(function() {
           <li><a href="#kapcsolat-szekcio" name="contact" class="contact"></a></li>
         </ul>
         
-        <!-- /Highlight --> 
-        <a name="rolunk-szekcio"></a> </div>
+        <!-- Karikák Doboz VÉGE --> 
+        <a name="rolunk-szekcio"></a>
+        <div id="rolunk-szekcio"></div>
+      </div>
     </div>
     </section>
   </div>
@@ -197,11 +81,11 @@ $(function() {
     <div class="container">
       <div class="row">
         <div class="12u">
-          <section class="is-features">
+          <section class="csokkentettsorkoz">
             <div id="whitespace"></div>
             <h2  class="rolunk"><span>A HACKEREK</span></h2>
             <section><span id="idezet">"A hacker olyan személy, aki intellektuális kíváncsiságból, tiszta kreativitásból vagy élvezetből a rendszerek korlátait próbálja felderíteni vagy meghaladni."</span>
-              <ul id="brucequote" class="meta rightalign">
+              <ul id="brucequote" class="idezet rightalign">
                 <li class="comments"> - <a target="_blank" href="http://www.mediakutato.hu/cikk/2002_03_osz/01_hackerek/03.html">Bruce Schneider</a> </li>
               </ul>
             </section>
@@ -214,19 +98,15 @@ $(function() {
               A hackerspace koncepció alapján több száz kreatív műhely működik sikeresen a világban. Bár a hacker kifejezés használata azt sugallhatja, hogy ezekben a műhelyekben fókusz az informatikai biztonságon van, a legtöbb hasonló intézményben a biokutatásokon át egészen a rakétakísérletekig minden bütykölhető dolgot megpiszkálnak. A koncepció merít az elmúlt évek szabad szoftveres fejlesztő-közösségek működési mintáiból. Ezek az online fejleszői csoportok önkéntesen szerveződtek és dolgoztak olyan célokért mint a Linux, az Apache webszerver és több tízezer egyéb szoftveres megoldás. A sikeres külföldi példák azt mutatják, hogy ezen alapelvek mentén a hús-vér világban is működő, produktív és kreatív munka tud folyni.<br>
               <br>
               Egy hackerspace-nek két fontos szereplője van: az állandó hely és a közösség. A közösség fentartja és használja a helyet. A közösség a hely fenntartásán túl további közös és megosztott erőforrásokra is szert tehet, ilyenek a közös szerszámok, eszközök, tudás, infrastruktúra, szolgáltatások. Jó példa erre egy drágább Rapid Prototyping eszköz, vagy például egy 3D nyomtató. Egyedül nehezen tudunk egy ilyet finanszírozni magunknak. Ha mégis, a kihasználtsága valószínüleg nem lenne elégséges ahhoz, hogy megtérüljön a beruházás. Nem így, ha többen állunk össze egy ilyen eszközre.</section>
-            <section class="centered" style="padding-bottom:2em;"><a href="http://hackerspaces.org/wiki/" target="_blank"><img id="hackerspaces-img" border="0" class="rounded10" alt="hackerspaces" src="images/hackerspaces.png"></a></section>
+            <section class="centered" style="padding-bottom:2em;"><a href="http://hackerspaces.org/wiki/" target="_blank"><img class="pushdown" id="hackerspaces-img" border="0" class="rounded10" alt="hackerspaces" src="images/hackerspaces.png"></a></section>
             <h2  class="rolunk"><span>A Független Magyar tudásközpont - H.A.C.K. </span></h2>
             Egy budapesti hackerpsace. Egy non-profit innovációs közösség. A szabad és hatékony információáramlásnak, online és lehetőség szerint offline infrastruktúrát (helyszínt és eszközöket) biztosít az alapítók, más tagok valamint innovatív és rokonszenves alkotások, projektek számára. </section>
           <div>
             <div class="row">
-              <div class="5u"> 
-                
-                <!-- Bejegyzés 1--> 
-                
-                <!-- Bejegyzés 2-->
+              <div class="5u">
                 <section class="is-feature">
                   <div id="alapelvek_container">
-                    <h2>H.A.C.K Alapelvek</h2>
+                    <h2>H.A.C.K. Alapelvek</h2>
                     <div id="alapelvek">
                       <ul>
                         <li><a class="alapelvek_lista" id="fuggetlenseg-button">függetlenség</a></li>
@@ -240,8 +120,6 @@ $(function() {
                     </div>
                   </div>
                 </section>
-                <!-- /Bejegyzés 2--> 
-                
               </div>
               <div class="6u">
                 <section class="is-feature">
@@ -278,21 +156,23 @@ $(function() {
             </div>
             <div class="20u" id="interested">
               <h2>Felkeltettük az érdeklődésed?</h2>
-              <a class="button button-alt button-big" href="http://hsbp.org" target="_blank">Tudj meg többet!</a></div>
-              <a name="infrastruktura-szekcio"></a>
+              <a class="button button-alt button-big pushdown" href="http://hsbp.org" target="_blank">Tudj meg többet!</a></div>
+            <a name="infrastruktura-szekcio"></a>
+            <div id="infrastruktura-szekcio"></div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<!--Rólunk Szekció vége --> 
+<!--Rólunk Szekció VÉGE --> 
+
 <!-- Infrastruktúra szekció -->
 <div id="infrastruktura-container">
   <div class="container">
     <div class="row">
       <div class="12u">
-        <section class="is-features">
+        <section class="csokkentettsorkoz">
           <div id="whitespace"></div>
           <h2  class="infrastruktura"><span>Infrastruktúra</span></h2>
           <div class="row">
@@ -309,41 +189,38 @@ $(function() {
                   <li>- Könyvtár,</li>
                   <li>- Felszerelt konyha a kulináris eseményekhez.</li>
                 </ul>
-              </div></section>
-              <section  class="infrastructure_list_container" >Vannak még érdekes eszközeink, amelyekkel szintén megismerkedhetsz:
-                 <ul>
-                  <li>-<a href="http://hsbp.org/reprap&highlight=rep%20rap" target="_blank"> 3D Nyomtató - REPRAP PRUSA MENDEL</a></li>
-                  <li>-<a href="http://hsbp.org/silhouette" target="_blank"> Vágógép - GRAPHTEC SILHOUETTE CAMEO</a></li>
-                  <li>-<a href="http://hsbp.org/zoldfal&highlight=z%C3%B6ldfal"> Aquapónikus Zöldfal - MONSTERS INCLUDED</a></li>
-                  <li>-<a href="http://hsbp.org/burnstation"> Burn Station - HIGH-TECH BEVÁSÁRLÓKOCSI</a></li>
-                 
-                </ul>
-              
+              </div>
             </section>
-            <!-- /Bejegyzés 2--> 
-            
+            <section  class="infrastructure_list_container" >Vannak még érdekes eszközeink, amelyekkel szintén megismerkedhetsz:
+              <ul>
+                <li>-<a href="http://hsbp.org/reprap&highlight=rep%20rap" target="_blank"> 3D Nyomtató - REPRAP PRUSA MENDEL</a></li>
+                <li>-<a href="http://hsbp.org/silhouette" target="_blank"> Vágógép - GRAPHTEC SILHOUETTE CAMEO</a></li>
+                <li>-<a href="http://hsbp.org/zoldfal&highlight=z%C3%B6ldfal"> Aquapónikus Zöldfal - MONSTERS INCLUDED</a></li>
+                <li>-<a href="http://hsbp.org/burnstation"> Burn Station - HIGH-TECH BEVÁSÁRLÓKOCSI</a></li>
+              </ul>
+            </section>
           </div>
           <div class="6u">
           <div id="infrastruktura-img" class="rounded20">&nbsp; </div>
         </section>
       </div>
-      <div  id="visitus"><a class="button" href="#kapcsolat-szekcio" target="_blank">látogass el hozzánk!</a></div>
+      <div  id="visitus"><a class="button pushdown" href="#kapcsolat-szekcio" target="_blank">látogass el hozzánk!</a></div>
       <a name="aktualis-szekcio"</a>
+      <div id="aktualis-szekcio"></div>
     </div>
-    
   </div>
 </div>
 </div>
 </div>
 
-<!--Infrastruktúra Szekció vége --> 
+<!--Infrastruktúra szekció vége --> 
 
-<!-- Aktuális infó szekció -->
+<!-- Aktuális Információk szekció -->
 <div id="aktualis-container">
   <div class="container">
     <div class="row">
       <div class="12u">
-        <section class="is-features">
+        <section class="csokkentettsorkoz">
         <div id="whitespace"></div>
         <h2  class="aktualis" ><span>Aktuális információk</span></h2>
         <div class="row">
@@ -354,8 +231,6 @@ $(function() {
                   Fontos Dolgok Doboz</h2>
               </div>
             </section>
-            <!-- /Bejegyzés 2--> 
-            
           </div>
           <div class="4u">
             <section class="is-feature">
@@ -379,69 +254,70 @@ $(function() {
   </div>
 </div>
 <a name="kapcsolat-szekcio"></a>
-<!--Aktuális infó Szekció vége --> 
-<!--Kapocsolat Szekció --> 
+<div id="kapcsolat-szekcio"></div>
+<!--Aktuális Információk szekció VÉGE --> 
+
+<!--Kapocsolat szekció -->
 <div id="kapcsolat-container">
   <div class="container">
     <div class="row">
       <div class="12u">
-        <section class="is-features">
+        <section class="csokkentettsorkoz">
         <div id="whitespace"></div>
         <h2  class="kapcsolat"><span>Kapcsolat</span></h2>
         <div class="row">
-            <div class="4u" >
+          <div class="4u" >
             <section class="is-feature">
               <div id="contactinfo-container" style="width:50% auto; height:300px;">
                 <h4>Elérhetőségeink:</h4>
-                 <section> 
-        <span>Cim:</span> 1056 Budapest, Bástya utca 12. <br>
-	    <span>Telefon:</span> +36 (1) / 445-42-25 <br>
-        <span>IRC:</span> #hspbp @ IRCnet<br>
-        <span>Email:</span> hack(kukac)hsbp(pont)org </section>
-        <section>
-        <h4><span>Közösségi csatornáink:</span></h4>
-        <ul class="contact">
-          <li><a href="https://facebook.com/hackerspace.budapest" target="_blank" class="facebook">Facebook</a></li>
-          <li><a href="https://twitter.com/hackerspacebp" target="_blank" class="twitter">Twitter</a></li>
-           <li><a href="http://hack.soup.io/" target="_blank" class="soup">Soup</a></li>
-        </ul>
-      </section>
+                <section> <span>Cim:</span> 1056 Budapest, Bástya utca 12. <br>
+                  <span>Telefon:</span> +36 (1) / 445-42-25 <br>
+                  <span>IRC:</span> #hspbp @ IRCnet<br>
+                  <span>Email:</span> hack(kukac)hsbp(pont)org </section>
+                <section>
+                  <h4><span>Közösségi csatornáink:</span></h4>
+                  <ul class="contact">
+                    <li><a href="https://facebook.com/hackerspace.budapest" target="_blank" class="facebook">Facebook</a></li>
+                    <li><a href="https://twitter.com/hackerspacebp" target="_blank" class="twitter">Twitter</a></li>
+                    <li><a href="http://hack.soup.io/" target="_blank" class="soup">Soup</a></li>
+                  </ul>
+                </section>
               </div>
-              
             </section>
           </div>
           <div class="4u">
             <section class="is-feature">
               <div id="map_container" style="width:50% auto; height:300px;">
-                <iframe class="rounded20" width="330" height="265" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Budapest,+B%C3%A1stya+utca+12,+Hungary&amp;aq=0&amp;oq=b%C3%A1stya+utca+12+bud&amp;sll=42.617791,-49.042969&amp;sspn=54.611815,135.263672&amp;ie=UTF8&amp;hq=&amp;hnear=1056+Budapest,+V.+ker%C3%BClet,+B%C3%A1stya+utca+12,+Hungary&amp;t=m&amp;ll=47.489137,19.059391&amp;spn=0.0174,0.042915&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /> </div>
+                <iframe class="rounded20" width="330" height="265" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Budapest,+B%C3%A1stya+utca+12,+Hungary&amp;aq=0&amp;oq=b%C3%A1stya+utca+12+bud&amp;sll=42.617791,-49.042969&amp;sspn=54.611815,135.263672&amp;ie=UTF8&amp;hq=&amp;hnear=1056+Budapest,+V.+ker%C3%BClet,+B%C3%A1stya+utca+12,+Hungary&amp;t=m&amp;ll=47.489137,19.059391&amp;spn=0.0174,0.042915&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+                <br />
+              </div>
             </section>
-            <!-- /Bejegyzés 2--> 
-            
           </div>
-        
-           <div class="4u" >
+          <div class="4u" >
             <section class="is-feature">
               <div id="contactinfo-container" style="width:50% auto; height:300px;">
                 <h4>Küldj üzenetet!</h4>
-                 <section> 
-        <form id="contactform" action="contactform_hander.php" method="get">
- 				 <input class="rounded10" value="     Válasz email cím: " type="text" name="emailaddress"><br>
-  				 <input class="rounded10" value="     Tárgy:" type="text" name="mailsubject"><br>
-                 <textarea class="rounded10"  name="mailmsg" rows="8" cols="30" form="contactform"></textarea>
-                 <br>
-  				<input class="rounded10" type="submit" value="Elküld">
-</form>
-       
-      </section>
+                <section>
+                  <form id="contactform" action="contactform_hander.php" method="get">
+                    <input class="rounded10" value="     Válasz email cím: " type="text" name="emailaddress">
+                    <br>
+                    <input class="rounded10" value="     Tárgy:" type="text" name="mailsubject">
+                    <br>
+                    <textarea class="rounded10"  name="mailmsg" rows="8" cols="30" form="contactform"></textarea>
+                    <br>
+                    <input class="rounded10" type="submit" value="Elküld">
+                  </form>
+                </section>
               </div>
-              
             </section>
           </div>
         </div>
       </div>
     </div>
   </div>
-  </div>
+</div>
+<!--Kapocsolat szekció VÉGE--> 
+
 <!-- Footer -->
 <footer id="footer">
   <div class="row"> 

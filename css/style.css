@@ -1,10 +1,10 @@
 /*
-Ez a file minig betöltődik. Itt található a legtöbb tartalmi elemre vonatkozó defeinició
+Ez a file mindig betöltődik függetlenül a képernyő méretétől. Itt található a legtöbb tartalmi elemre vonatkozó defeinició. Csak olyan tulajdonságot definiálj ebben a fileban ami biztosan megfeleően fog működni váltakozó képernyő szélleség esetén is
 */
 
-/*
- Globális stilus definiciók az arculathoz 
- */
+/*********************************************
+ Globális stilus definiciók az oldal keretéhez 
+ *********************************************/
 
 * {
 	-moz-box-sizing: border-box;
@@ -31,18 +31,6 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, h7 a {
 	text-decoration: none;
 	color: inherit;
 }
-h2.major {
-	position: relative;
-	border-top: solid 5px #e7eae8;
-}
-h2.major span {
-	background: #fff;
-	position: relative;
-	display: inline-block;
-}
-#footer h2.major span {
-	background: #f2f5f3;
-}
 a {
 	color: #006376;
 	text-decoration: none;
@@ -50,11 +38,6 @@ a {
 }
 a:hover {
 	text-decoration: blink;
-}
-form {
-}
-form input, form select, form textarea {
-	-webkit-appearance: none;
 }
 br.clear {
 	clear: both;
@@ -65,25 +48,6 @@ p, ul, ol, dl, table {
 section, article {
 	margin-bottom: 1em;
 }
-section > :last-child, article > :last-child {
-	margin-bottom: 0;
-}
-section:last-child, article:last-child {
-	margin-bottom: 0;
-}
-.image {
-	position: relative;
-	display: inline-block;
-	border-radius: 8px;
-}
-.image img {
-	display: block;
-	width: 100%;
-	border-radius: 8px;
-}
-/*********************************
-Egyéni Oszálydefiníciók
-*********************************/
 .centered {
 	text-align: center;
 	margin: 0 auto;
@@ -102,76 +66,57 @@ Egyéni Oszálydefiníciók
 .rounded10 {
 	border-radius: 10px;
 }
-/*Header Szlogen*/
+.csokkentettsorkoz {
+	line-height: 1.2em;
+}
+#whitespace {
+	height: 1.5em;
+}
+/**************************************************
+ Globális stilus definiciók az oldal keretéhez VÉGE
+ *************************************************/
 
-.byline {
-	display: block;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-weight: 700;
-	color: #c1cac5;
-}
-.bylineheader {
-	text-align: center;
-	text-decoration: none;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-weight: 700;
-	color: #000;
-}
-/*/Header Szlogen*/	
-/* Gomb lenyomás effekt */
+/*********
+Effektek
+*********/
+
+/*********************
+Gomb lenyomás effekt 
+**********************/
 .pushdown {
 	border-radius: 8px;
 	-moz-border-radius: 8px;
 	-webkit-border-radius: 8px;
-	box-shadow: 0px 3px 5px #000;
-	-moz-box-shadow: 0px 3px 5px #000;
-	-webkit-box-shadow: 0px 3px 5px #000;
+	box-shadow: 0px 1px 3px #000;
+	-moz-box-shadow: 0px 1px 3px #000;
+	-webkit-box-shadow: 0px 1px 3px #000;
 }
 .pushdown:hover {
 	position: relative;
 	top: 3px;
-	color: #faa;
 	box-shadow: none;
 	-moz-box-shadow: none;
 	-webkit-box-shadow: none;
 }
-/* /Gomb lenyomás effekt */
-/*Drop shadow effect*/
+/*********************
+Gomb lenyomás effekt VÉGE
+**********************/
+
+/************************************************
+Drop shadow effect - Végül/még nicns felhasználva
+*************************************************/
 .dropshadow {
 	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
-/*/Drop shadow effect*/
-/*Nyelv választó*/
-/*csak webkites böngészőben működik egyelőre*/
-#langswitcher {
-	background: -webkit-linear-gradient(#006, #F00);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-#langswitcher:hover {
-	-webkit-text-fill-color: #00F;
-}
-/*/Nyelv választó*/
-/*********************************
-/Egyéni Oszálydefiníciók
-*********************************/
-/*/Globális stilus definiciók az arculathoz*/
- 
- /********************************
- Egyedi tartalmi elemek definiciói
- *********************************/
- 
+/************************************************
+Drop shadow effect - VÉGE
+*************************************************/		
 
-/********************************
- /Egyedi tartalmi elemek definiciói
- *********************************/
-		
-		/*
-		Az alábbiak a pixelated effektet adják a bannerhez, és a képekhez. Ez egy trükk amivel kicsit elmaszkolható a képek torzulása ahogy válltozik a felbontés. Ha kiszeded az alábbiakat akkor élesebb, de esetenként csúnyán eltoryzult képeket kapsz.
-		
-		*/
+/*************************************************************************************************************************
+Banner pixel overlay effekt. Ez egy trükk amivel összenyomott képeket, jelníthetünk meg a szemnek kissé kellemesebb módon. 
+**************************************************************************************************************************/
 		
 .image:before {
 	content: '';
@@ -184,23 +129,21 @@ Egyéni Oszálydefiníciók
 	opacity: 0.2;
 	border-radius: 8px;
 }
-.image-full {
-	display: block;
-	width: 100%;
-	margin: 0 0 2em 0;
-}
-.image-left {
-	float: left;
-	margin: 0 2em 2em 0;
-}
-.image-centered {
-	display: block;
-	margin: 0 0 2em 0;
-}
-.image-centered img {
-	margin: 0 auto;
-	width: auto;
-}
+/*********************************
+Banner pixel overlay effekt. VÉGE 
+*********************************/
+
+/*************
+Effektek VÉGE
+**************/
+/***************************************
+Az oldal egyedi elemeinek tulajdonságai
+***************************************/
+
+/*****
+Gombok
+******/
+
 .button {
 	display: inline-block;
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -226,102 +169,72 @@ Egyéni Oszálydefiníciók
 .button-alt:hover {
 	background: #ccd5d0;
 }
-.actions {
-}
-ul.style1 {
-	list-style: disc;
-	padding-left: 1.5em;
-}
-ul.style2 {
-}
-ul.style2 > li {
-	border-top: solid 2px #e7eae8;
-	padding-top: 2.35em;
-	margin-top: 2.35em;
-}
-ul.style2 > li:first-child {
-	border-top: 0;
-	padding-top: 0;
-	margin-top: 0;
-}
-ul.contact {
-	text-align:left;
-	
-}
-ul.contact li {
+/***************
+Gombok VÉGE
+***************/
+/******
+Banner                                                             
+*******/
+
+#banner-wrapper {
 	position: relative;
-	display: inline-block;
-	margin: 0 0.25em 0 0.25em;
-	
-	top: 0;
-	-moz-transition: top .15s ease-in-out;
-	-webkit-transition: top .15s ease-in-out;
-	-o-transition: top .15s ease-in-out;
-	-ms-transition: top .15s ease-in-out;
-	transition: top .15s ease-in-out;
+	background: url('../images/banner.jpg') center center no-repeat;
+	background-size: cover;
+	z-index: 1;
+	height: 325px;
+	padding-top: 5em;
 }
-ul.contact li a {
-	display: block;
+#banner-wrapper:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url('images/overlay.png');
+	opacity: 0.175;
+}
+#banner {
 	position: relative;
-	background: #c1cac5 url('images/icons-contact.png');
-	width: 48px;
-	height: 48px;
-	text-indent: -9999em;
-	border-radius: 6px;
-	outline: 0;
-	-moz-transition: background-color .2s ease-in-out;
-	-webkit-transition: background-color .2s ease-in-out;
-	-o-transition: background-color .2s ease-in-out;
-	-ms-transition: background-color .2s ease-in-out;
-	transition: background-color .2s ease-in-out;
+	background: rgba(21, 28, 23, 0.95);
+	text-align: center;
+	height: 225px;
+	margin: 0 auto;
+	z-index: 2;
 }
-ul.contact li a.facebook {
-	background-position: 0px 0px;
-}
-ul.contact li:hover a.facebook {
-	background-color: #3C5A98;
-}
-ul.contact li a.twitter {
-	background-position: -48px 0px;
-}
-ul.contact li:hover a.twitter {
-	background-color: #2DAAE4;
-}
-ul.contact li a.soup {
-	background-position: -96px 0px;
-}
-ul.contact li:hover a.soup{
-	background-color: #C40002;
-}
-ul.contact li a.dribbble {
-	background-position: -144px 0px;
-}
-ul.contact li:hover a.dribbble {
-	background-color: #C4376B;
-}
-ul.contact li a.linkedin {
-	background-position: -192px 0px;
-}
-ul.contact li:hover a.linkedin {
-	background-color: #006599;
-}
-ul.contact li a.tumblr {
-	background-position: -240px 0px;
-}
-ul.contact li:hover a.tumblr {
-	background-color: #31516A;
-}
-ul.contact li a.googleplus {
-	background-position: -288px 0px;
-}
-ul.contact li:hover a.googleplus {
-	background-color: #DA2713;
-}
-ul.contact li:hover {
-	top: -5px;
-}
-ul.contact li:active {
+#banner:before {
+	content: '';
+	position: absolute;
+	left: 0;
 	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url('images/highlight.png') center center;
+	background-size: 100% 200%;
+}
+#banner > * {
+	position: relative;
+	z-index: 3;
+}
+#banner h2 {
+	color: #fff;
+}
+#banner .byline {
+	color: #575d59;
+}
+
+/**********
+Banner VÉGE                                                            
+***********/
+/*************************************************************************
+Karikák doboz EZ EGYBEN AZ 1200px SZÉLES, MINDENT MAGÁBAN FOGLALÓ DOBOZ IS
+**************************************************************************/
+
+#main {
+}
+#main-wrapper {
+	background: #fff;
+	border-top: solid 5px #C1CAC5;
 }
 ul.special {
 }
@@ -339,9 +252,6 @@ ul.special li {
 ul.special li:hover {
 	top: -15px;
 }
-/* ul.special li:hover a {
-	background: #b9d2ce;
-} */
 ul.special a {
 	display: block;
 	position: relative;
@@ -390,26 +300,71 @@ ul.special a.contact:before {
 	background-position: -384px 0px;
 }
 ul.special a.contact:hover {
-	background:#dfdfd1;
+	background: #dfdfd1;
 }
-ul.meta {
+
+/**********************
+karikák Doboz VÉGE
+***********************/
+
+/********************************************
+Az oldal egyedi elemeinek  tulajdonságai VÉGE
+********************************************/
+
+/**********************************
+Az egyes szekciók tulajdonságai
+***********************************/
+#rolunk-container, #aktualis-container, #infrastruktura-container, #kapcsolat-container {
+	padding: 3em 0;
+	border-top: 10px solid #C1CAC5;
+	
+}
+h2.rolunk, h2.aktualis, h2.infrastruktura, h2.kapcsolat {
+	position: relative;
+	border-top: solid 5px #6B7770;
+}
+h2.rolunk span, h2.aktualis span, h2.infrastruktura span, h2.kapcsolat span {
+	position: relative;
+	display: inline-block;
+}
+#rolunk-container span, #aktualis-container span, #infrastruktura-container span, #kapcsolat-container span {
+	line-height: 1em;
+	}
+/******************
+Rólunk szekció
+*******************/
+#rolunk-container {
+	background: #E3DAA8;
+}
+h2.rolunk span {
+	background: #E3DAA8;
+}
+
+/****************************
+Bruce Schneider neve - Idézet
+****************************/
+#idezet {
+	font-style: italic;
+}
+ 
+ul.idezet {
 	font-size: 0.85em;
 	color: #a1aaa5;
 }
-ul.meta li {
+ul.idezet li {
 	position: relative;
 	display: inline-block;
 	padding-left: 24px;
 	margin-left: 1em;
 }
-ul.meta li a {
+ul.idezet li a {
 	color: inherit;
 	outline: 0;
 }
-ul.meta li:first-child {
+ul.idezet li:first-child {
 	margin-left: 0;
 }
-ul.meta li:before {
+ul.idezet li:before {
 	content: '';
 	display: block;
 	position: absolute;
@@ -420,164 +375,16 @@ ul.meta li:before {
 	margin-top: -8px;
 	background: url('images/icons-meta.png');
 }
-ul.meta li.timestamp:before {
-	background-position: 0px 0px;
-}
-ul.meta li.comments:before {
+ul.idezet li.comments:before {
 	background-position: -16px 0px;
 }
-/* itt a vége a pixelizálónak */
-	
+/**********************************
+Bruce Schneider neve - Idézet VÉGE
+***********************************/
 
-/*********************************************************************************
- Itt módisithatod az egyes paragrafusok stilusjegyeit                                                   
-*********************************************************************************/
-
-.is-highlight {
-	text-align: center;
-}
-.is-features {
-	line-height: 1.2em;
-}
-.is-feature {
-}
-.is-blog {
-}
-.is-post {
-}
-.is-page-content {
-}
-/*********************************************************************************
-/* A Banner definiciói                                                              
-*********************************************************************************/
-
-#banner-wrapper {
-	position: relative;
-	background: url('../images/banner.jpg') center center no-repeat;
-	background-size: cover;
-	z-index: 1;
-	height: 325px;
-	padding-top: 5em;
-}
-#banner-wrapper:before {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background: url('images/overlay.png');
-	opacity: 0.175;
-}
-#main-wrapper {
-	background: #fff;
-	border-top: solid 5px #C1CAC5;
-	border-bottom: solid 5px #C1CAC5;
-}
-#banner {
-	position: relative;
-	background: rgba(21, 28, 23, 0.95);
-	text-align: center;
-	height: 225px;
-	margin: 0 auto;
-	z-index: 2;
-}
-#banner:before {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background: url('images/highlight.png') center center;
-	background-size: 100% 200%;
-}
-#banner > * {
-	position: relative;
-	z-index: 3;
-}
-#banner h2 {
-	color: #fff;
-}
-#banner .byline {
-	color: #575d59;
-}
-#banner .button {
-	color: #b4b7b5;
-	background: transparent !important;
-	border: solid 4px rgba(87, 93, 89, 0.35);
-	border-radius: 16px;
-	-moz-transition: border-color .2s ease-in-out, color .2s ease-in-out;
-	-webkit-transition: border-color .2s ease-in-out, color .2s ease-in-out;
-	-o-transition: border-color .2s ease-in-out, color .2s ease-in-out;
-	-ms-transition: border-color .2s ease-in-out, color .2s ease-in-out;
-	transition: border-color .2s ease-in-out, color .2s ease-in-out;
-}
-#banner .button:hover {
-	color: #e4e7e5;
-	border-color: rgba(87, 93, 89, 0.75);
-}
-#banner .button:active {
-	color: #fff;
-	border-color: rgba(97, 103, 99, 1.0);
-}
-/*********************************************************************************
-A Main Content Dobozt itt felülvezérelheted
-*********************************************************************************/
-
-#main {
-}
-/*********************************************************************************
-A Footert itt felülvezérelheted   
-*********************************************************************************/
-
-#footer {
-	border-top: 10px solid #C1CAC5;
-}
-#footer a {
-	color: inherit;
-}
-/*
-Copyright doboz
-*/
-
-#copyright {
-	display: inline-block;
-	background: #e7eae8;
-	padding: 0.75em 2em 0.75em 2em;
-	border-radius: 8px;
-	font-size: 0.85em;
-	color: #8b9790;
-}
-#copyright a {
-	color: inherit;
-}
-/*********************************
-Rolunk szekcio
-*********************************/
-#rolunk-container {
-	padding: 3em 0;
-	background: #E3DAA8;
-	border-top: 10px solid #C1CAC5;
-}
-h2.rolunk {
-	position: relative;
-	border-top: solid 5px #6B7770;
-}
-h2.rolunk span {
-	position: relative;
-	display: inline-block;
-	background: #E3DAA8;
-}
-#rolunk-container span {
-	line-height: 1em;
-}
-#whitespace {
-	height: 1.5em;
-}
-#idezet {
-	font-style: italic;
-}
+/*********
+Alapelvek
+*********/
 #alapelvek_container {
 	padding-top: 1em;
 	width: 300px;
@@ -600,48 +407,23 @@ a.alapelvek_lista:hover {
 #fenntarthatosag, #onkentesseg, #meritokracia, #belepes, #transzparencia, #nyitottsag {
 	display: none;
 }
-/*********************************
-Aktualis szekcio
-*********************************/
-#aktualis-container {
-	padding: 3em 0;
-	background: #aee1ae;
-	border-top: 10px solid #C1CAC5;
-}
+/**************
+Alapelvek VÉGE
+***************/
 
-h2.aktualis {
-	position: relative;
-	border-top: solid 5px #6B7770;
-}
-h2.aktualis span {
-	position: relative;
-	display: inline-block;
-	background: #aee1ae;
-}
-#aktualis-container span {
-	line-height: 1em;
-}
-#whitespace {
-	height: 1.5em;
-}
-/*********************************
-infrastruktúra szekcio
-*********************************/
+
+/******************
+Rolunk szekció VÉGE
+*******************/
+
+/***********************
+Infrastruktúra szekció
+************************/
 #infrastruktura-container {
-	padding: 1em 0;
 	background: #b9d2ce;
-}
-h2.infrastruktura {
-	position: relative;
-	border-top: solid 5px #6B7770;
 }
 h2.infrastruktura span {
-	position: relative;
-	display: inline-block;
 	background: #b9d2ce;
-}
-#infrastruktura-container span {
-	line-height: 1em;
 }
 .infrastructure_list_container {
 	width: 50% auto;
@@ -659,29 +441,129 @@ h2.infrastruktura span {
 .infrastructure_list_container a:hover {
 	color: #FFF
 }
-/*********************************
-Kapcsolat szekcio
-*********************************/
-#kapcsolat-container {
-	padding: 3em 0;
-	background: #dfdfd1;
-	border-top: 10px solid #C1CAC5;
+/**************************
+Infrastruktúra szekció VÉGE
+***************************/
+
+/***************************
+Aktuális Információk szekció
+****************************/
+#aktualis-container {
+	background: #aee1ae;
 }
-h2.kapcsolat {
-	position: relative;
-	border-top: solid 5px #6B7770;
+h2.aktualis span {
+	background: #aee1ae;
+}
+/********************************
+Aktuális Információk szekció VÉGE
+*********************************/
+
+/*****************
+Kapcsolat szekció
+******************/
+#kapcsolat-container {
+	background: #dfdfd1;
 }
 h2.kapcsolat span {
-	position: relative;
-	display: inline-block;
 	background: #dfdfd1;
 }
-#kapcsolat-container span {
-	line-height: 1em;
-}
 #contactform input {
-	width:250px;
-	}
+	width: 250px;
+}
 #contactform textarea {
-	width:250px;
-	}
+	width: 250px;
+}
+/***********************
+Social csatornák ikonjai
+************************/
+ul.contact {
+	text-align: left;
+}
+ul.contact li {
+	position: relative;
+	display: inline-block;
+	margin: 0 0.25em 0 0.25em;
+	top: 0;
+	-moz-transition: top .15s ease-in-out;
+	-webkit-transition: top .15s ease-in-out;
+	-o-transition: top .15s ease-in-out;
+	-ms-transition: top .15s ease-in-out;
+	transition: top .15s ease-in-out;
+}
+ul.contact li a {
+	display: block;
+	position: relative;
+	background: #c1cac5 url('images/icons-contact.png');
+	width: 48px;
+	height: 48px;
+	text-indent: -9999em;
+	border-radius: 6px;
+	outline: 0;
+	-moz-transition: background-color .2s ease-in-out;
+	-webkit-transition: background-color .2s ease-in-out;
+	-o-transition: background-color .2s ease-in-out;
+	-ms-transition: background-color .2s ease-in-out;
+	transition: background-color .2s ease-in-out;
+}
+ul.contact li a.facebook {
+	background-position: 0px 0px;
+}
+ul.contact li:hover a.facebook {
+	background-color: #3C5A98;
+}
+ul.contact li a.twitter {
+	background-position: -48px 0px;
+}
+ul.contact li:hover a.twitter {
+	background-color: #2DAAE4;
+}
+ul.contact li a.soup {
+	background-position: -96px 0px;
+}
+ul.contact li:hover a.soup {
+	background-color: #C40002;
+}
+ul.contact li:hover {
+	top: -5px;
+}
+ul.contact li:active {
+	top: 0;
+}
+/*****************************
+Social csatornák ikonjai VÉGE
+******************************/
+/*********************
+Kapcsolat szekció VÉGE
+**********************/
+
+/*****
+Footer  
+*****/
+
+#footer {
+	border-top: 10px solid #C1CAC5;
+}
+#footer a {
+	color: inherit;
+}
+/**************
+Copyright doboz
+***************/
+
+#copyright {
+	display: inline-block;
+	background: #e7eae8;
+	padding: 0.75em 2em 0.75em 2em;
+	border-radius: 8px;
+	font-size: 0.85em;
+	color: #8b9790;
+}
+#copyright a {
+	color: inherit;
+}
+/*******************
+Copyright doboz VÉGE
+********************/
+/***********
+Footer  VÉGE 
+************/

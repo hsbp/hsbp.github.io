@@ -1,4 +1,4 @@
-/* Ha le van tiltva van a JS futtatás a kliensnál akkor ez a css kerüld betöltésre */ 
+/* Ha le van tiltva van a JS futtatás a kliensnél akkor ez a css kerül betöltésre */ 
 /* Globális stilus definiciók. */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
@@ -32,7 +32,7 @@ body {
 	-webkit-text-size-adjust: none
 }
 /*/Globális stilus definiciók. */
-/* A dobozok stulusdefinicioi */
+/* A reszponzív dobozok és elválasztók stílusdefinicioi */
 .container {
 	width: 1200px;
 	margin: 0 auto
@@ -167,4 +167,4 @@ width:83.3333333333%!important
 .row.flush>.\31 u, .row.flush>.\32 u, .row.flush>.\33 u, .row.flush>.\34 u, .row.flush>.\35 u, .row.flush>.\36 u, .row.flush>.\37 u, .row.flush>.\38 u, .row.flush>.\39 u, .row.flush>.\31 0u, .row.flush>.\31 1u, .row.flush>.\31 2u, .flush>.row>.\31 u, .flush>.row>.\32 u, .flush>.row>.\33 u, .flush>.row>.\34 u, .flush>.row>.\35 u, .flush>.row>.\36 u, .flush>.row>.\37 u, .flush>.row>.\38 u, .flush>.row>.\39 u, .flush>.row>.\31 0u, .flush>.row>.\31 1u, .flush>.row>.\31 2u {
 margin:0!important
 }
-/* /A dobozok stulusdefinicioi */
+/* A reszponzív dobozok és elválasztók stílusdefinicioi */

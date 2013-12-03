@@ -1,10 +1,10 @@
 /*
-	A style.css mellet, zz a file töltődik be a legtöbb esetben amikor laptoprol vagy PC-ről töltik be az oldalt
+	A style.css mellet, ez a file töltődik be a legtöbb esetben amikor laptopról, széles képátjójú tabeltrőlm vagy PC-ről töltik be az oldalt
 */
 
-/*********************************************************************************
-Globális tilusjegyek                                                                   
-*********************************************************************************/
+/********************
+Globális stílusjegyek                                                                   
+*********************/
 
 body {
 	min-width: 1200px;
@@ -15,139 +15,44 @@ h1, h2, h3, h4, h5, h6, h7 {
 h2 {
 	font-size: 1.65em;
 }
-h2.major {
-	font-size: 1.65em;
-	text-align: center;
-	margin: 0 0 3em 0;
-}
-h2.major span {
-	top: -0.775em;
-	padding: 0 1.5em 0 1.5em;
-}
-#footer h2.major {
-	margin: 0 0 1em 0;
-}
-.sidebar h2.major {
-	text-align: left;
-	margin: 0 0 1em 0;
-}
-.sidebar h2.major span {
-	padding-left: 0;
-}
+
 h3 {
 	font-size: 1.25em;
 }
 h4 {
 	font-size: 1.25em;
 }
+/**************************
+Globális stílusjegyek VÉGE                                                                  
+***************************/
+
+/***************************************
+Az oldal egyedi elemeinek tulajdonságai
+***************************************/
+/*****
+Gombok
+******/
 .button {
 	font-size: 1.25em;
 	padding: 0.85em 1.85em 0.85em 1.85em;
+	margin: 0 0.5em 0 0.5em;
 }
 .button-big {
 	font-size: 1.65em;
 	padding: 0.85em 1.85em 0.85em 1.85em;
 }
-.actions {
-	text-align: center;
-	margin: 2em 0 0 0;
-}
-.actions .button {
-	margin: 0 0.5em 0 0.5em;
-}
-/*********************************************************************************/
-/* Paragrafusok stilusjegyei                                               */
-/*********************************************************************************/
+/**********
+Gombok VÉGE
+***********/
 
-.is-highlight {
-}
-.is-highlight .special {
-	margin: 0 0 4em 0;
-}
-.is-highlight h2 {
-	font-size: 3em;
-	margin: 0 0 0.75em 0;
-}
-.is-highlight .byline {
-	font-size: 1.65em;
-	margin: 0 0 1.5em 0;
-}
-.is-feature {
-	text-align: justify;
-}
-.is-feature h2, ul {
-	text-align: center;
-}
-.is-post {
-}
-.is-post header {
-	margin: 0 0 2.5em 0;
-}
-.is-post h3 {
-	font-size: 3em;
-	margin: 0 0 0.5em 0;
-}
-.is-post .byline {
-	font-size: 1.65em;
-	margin: 0 0 0.5em 0;
-}
-.is-post ul.meta {
-	margin: 0 0 0.5em 0;
-}
-.is-post-summary {
-}
-.is-post-summary h3 {
-	line-height: 1em;
-	margin: 0 0 0.75em 0;
-}
-.is-post-summary .meta {
-	margin: 0;
-	line-height: 1em;
-}
-.is-page-content {
-}
-.is-page-content header {
-	margin: 0 0 2.5em 0;
-}
-.is-page-content h2 {
-	font-size: 3em;
-	margin: 0 0 0.5em 0;
-}
-.is-page-content .byline {
-	font-size: 1.65em;
-	margin: 0 0 0.5em 0;
-}
-.is-page-content ul.meta {
-	margin: 0 0 0.5em 0;
-}
-/*
- Sidebar + Tartalom. Egyelőre nicns sidebar, de ez változhat. Legalább 960pixel széles ablaknál van értelme ezéert itt határozd meg a jegyeit                                                             */
-
-.sidebar {
-	padding-top: 0.5em;
-}
-.homepage .sidebar {
-	padding-top: 0;
-}
-.content {
-}
-.content-left {
-	padding-right: 2em;
-}
-.content-right {
-	padding-left: 2em;
-}
-/*********************************************************************************
+/*******
  Banner                                                              
-*********************************************************************************/
+********/
 
 #banner-wrapper {
 	padding: 5em 0 0 5em 0;
 }
-#main-wrapper {
-	border-top-width: 10px;
-	border-bottom-width: 10px;
-}
+
 #banner {
 	padding: 7em 0 5em 0;
 	width: 500px;
@@ -161,9 +66,9 @@ h4 {
 	font-size: 1.35em;
 	margin: 0 0 0.05em 0;
 }
-/*
+/****************
  Hacksense Doboz 
- */
+ ****************/
 .hacksense {
 	padding-top: 1em;
 	margin: 0 auto;
@@ -181,38 +86,16 @@ h4 {
 .hacksense-mobile {
 	display: none;
 }
-/*********************************************************************************
- Header                                                                        
-*********************************************************************************/
+/**********************
+ Hacksense Doboz  VÉGE
+ *********************/
+/***********
+ Banner VÉGE                                                             
+************/
 
-#header {
-	text-align: center;
-	font-size: 2em;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-weight: 700;
-	text-transform: uppercase;
-	padding: 6em 0 3em 0;
-	background: #fff;
-	margin: 0 auto;
-}
-#header .logo {
-	position: relative;
-	text-align: center;
-	border-top: solid 5px #999;
-}
-#header .logo div {
-	background: #fff;
-	position: relative;
-	display: inline-block;
-	padding: 0 1.5em 0 1.5em;
-	top: -0.65em;
-}
-#header .logo h1, #header .logo .byline {
-	display: inline;
-}
-/*********************************************************************************/
-/* Nav                                                                           */
-/*********************************************************************************/
+/***********
+ Felső Menü                                                                   
+*************/
 
 #nav {
 	position: fixed;
@@ -276,15 +159,17 @@ h4 {
 	background: #C1CAC5;
 	color: #fff;
 }
-#nav li.current_page_item {
+
+/****************
+ Felső Menü VÉGE                                                                
+*****************/
+/********************
+Karikák doboz
+*********************/
+#main-wrapper {
+	border-top-width: 10px;
+	border-bottom-width: 10px;
 }
-#nav li.current_page_item a {
-	background: #e3daa8;
-	color: #fff;
-}
-/*********************************************************************************
-A Main Content Dobozt itt felülvezérelheted a style.ss azonban ezt is felulirja
-*********************************************************************************/
 
 #main {
 	padding: 0.2em 0 0 0;
@@ -292,36 +177,30 @@ A Main Content Dobozt itt felülvezérelheted a style.ss azonban ezt is felulirj
 #main > .row {
 	padding: 3em 0 0 0;
 }
-/*********************************************************************************
-A Footert itt felülvezérelheted   style.ss azonban ezt is felulirja
-*********************************************************************************/
-#footer {
-	text-align: center;
-	padding:0;
-}
-#footer > .row {
-	padding: 0 ;
-}
-/*
-Copyright doboz
-*/
+/*****************
+Karikák doboz VÉGE
+******************/
+/********************************************
+Az oldal egyedi elemeinek  tulajdonságai VÉGE
+********************************************/
 
-#copyright {
-	margin: 2em 0 2em 0;
-}
-/*********************************************************************************
-Rolunk szekcio
-*********************************************************************************/
-
-h2.rolunk {
+/**********************************
+Az egyes szekciók tulajdonságai
+***********************************/
+h2.rolunk, h2.aktualis, h2.infrastruktura, h2.kapcsolat {
 	font-size: 1.65em;
 	text-align: center;
 	margin: 0;
-}
-h2.rolunk span {
+	}
+h2.rolunk span, h2.aktualis span, h2.infrastruktura span, h2.kapcsolat span {
 	top: -0.775em;
 	padding: 0 1.5em 0 1.5em;
 }
+
+/******************
+Rólunk szekció
+*******************/
+
 #interested {
 	text-align: center;
 	margin: 0 auto;
@@ -330,22 +209,13 @@ h2.rolunk span {
 #interested .button {
 	margin-top: 1em;
 }
-/*********************************************************************************
-Aktualis szekcio
-*********************************************************************************/
+/******************
+Rólunk szekció VÉGE
+*******************/
 
-h2.aktualis {
-	font-size: 1.65em;
-	text-align: center;
-	margin: 0;
-}
-h2.aktualis span {
-	top: -0.775em;
-	padding: 0 1.5em 0 1.5em;
-}
-/*********************************************************************************
-infrastruktura szekcio
-*********************************************************************************/
+/**********************
+Infrastruktúra szekció
+**********************/
 #infrastruktura-img {
 	width: 50% auto;
 	height: 320px;
@@ -354,15 +224,7 @@ infrastruktura szekcio
 #infrastruktura-container {
 	padding: 3em 0;
 }
-h2.infrastruktura {
-	font-size: 1.65em;
-	text-align: center;
-	margin: 0;
-}
-h2.infrastruktura span {
-	top: -0.775em;
-	padding: 0 1.5em 0 1.5em;
-}
+
 .infrastructure_list_container {
 	line-height: 1.2em;
 }
@@ -374,19 +236,21 @@ h2.infrastruktura span {
 #visitus .button {
 	margin-top: 1em;
 }
-/*********************************************************************************
-kapcsolat szekcio
-*********************************************************************************/
+/***************************
+Infrastruktúra szekció VÉGE
+****************************/
+/*****************************
+Aktuális Információk szekció
+*****************************/
 
-h2.kapcsolat {
-	font-size: 1.65em;
-	text-align: center;
-	margin: 0;
-}
-h2.kapcsolat span {
-	top: -0.775em;
-	padding: 0 1.5em 0 1.5em;
-}
+/*****************************
+Aktuális Információk szekció VÉGE
+*****************************/
+
+/****************
+Kapcsolat szekció
+******************/
+
 #contactinfo-container h2{
 	text-align:left;
 	}
@@ -395,9 +259,36 @@ h2.kapcsolat span {
 	padding-top:2em;
 	line-height:1.6em;
 	}
-	#contactinfo-container span{
+#contactinfo-container span{
 		font-weight:bold;
 
 	}
 ul.contact{	
 margin:1em 0 0 -0.25em}
+/*********************
+Kapcsolat szekció VÉGE
+**********************/
+
+/******
+Footer
+*******/
+#footer {
+	text-align: center;
+	padding:0;
+}
+#footer > .row {
+	padding: 0 ;
+}
+/**************
+Copyright doboz
+***************/
+
+#copyright {
+	margin: 2em 0 2em 0;
+}
+/*******************
+Copyright doboz VÉGE
+********************/
+/**********
+Footer VÉGE
+***********/
