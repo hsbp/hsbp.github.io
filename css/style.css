@@ -16,7 +16,7 @@ Ez a file mindig betöltődik függetlenül a képernyő méretétől. Itt talá
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
-	background: #f2f5f3;
+	
 	color: #6b7770;
 	font-size: 11.5pt;
 	line-height: 2em;
@@ -69,8 +69,8 @@ section, article {
 .csokkentettsorkoz {
 	line-height: 1.2em;
 }
-#whitespace {
-	height: 1.5em;
+div.whitespace {
+	height: 10px;
 }
 /**************************************************
  Globális stilus definiciók az oldal keretéhez VÉGE
@@ -561,6 +561,11 @@ Copyright doboz
 #copyright a {
 	color: inherit;
 }
+#w3valid {
+	margin 0 auto;
+	height:35px;
+	width:100px;
+	}
 /*******************
 Copyright doboz VÉGE
 ********************/
